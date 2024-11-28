@@ -3,3 +3,71 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: [开源设计]
 description: [hello开源设计课程]
+
+# 站点基本信息
+title: 开源设计
+description: hello开源设计课程
+lang: zh-CN
+author: 开源设计团队
+
+# 远程主题配置
+remote_theme: pages-themes/architect@v0.2.0
+
+# 插件列表
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag # SEO 插件，提升搜索引擎排名
+  - jekyll-sitemap # 生成站点地图
+  - jekyll-feed # 生成 RSS Feed
+  - jekyll-paginate # 启用分页功能
+
+# 站点导航栏配置
+navbar:
+  logo: /assets/images/logo.png # 替换为你的 logo 路径
+  links:
+    - title: 主页
+      url: /
+    - title: 课程介绍
+      url: /courses/
+    - title: 关于我们
+      url: /about/
+    - title: 联系方式
+      url: /contact/
+
+# 主页设置
+home:
+  hero_image: /assets/images/hero-bg.jpg # 替换为你的背景图像路径
+  hero_title: 欢迎来到开源设计！
+  hero_subtitle: 一站式学习开源设计理念
+
+# 主题自定义设置
+theme:
+  color_scheme: dark # 主题颜色：light 或 dark
+  accent_color: "#ff6600" # 自定义强调色
+  font: # 自定义字体
+    heading: "Noto Sans SC, sans-serif"
+    body: "Open Sans, sans-serif"
+
+# SEO 配置
+seo:
+  twitter_username: your_twitter_handle
+  github_username: your_github_handle
+  social:
+    - platform: WeChat
+      url: your_wechat_link
+    - platform: Weibo
+      url: your_weibo_link
+
+# 分页配置
+paginate: 5 # 每页显示 5 篇文章
+
+# 生成站点地图
+sitemap:
+  exclude:
+    - /404.html
+
+# 数据源
+collections:
+  courses:
+    output: true
+    permalink: /courses/:name/
