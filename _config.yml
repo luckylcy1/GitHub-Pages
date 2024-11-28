@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
 # 基本信息配置
 title: "开源设计"
 description: "hello 开源设计课程"
